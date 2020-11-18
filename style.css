@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes roll-down {
+  0% {
+    top: -10vh;
+  }
+
+  20% {
+    top: 0;
+  }
+}
+
 body {
   background-color: #000;
   width: 100%;
@@ -8,6 +31,7 @@ body {
 }
 
 header {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -15,6 +39,7 @@ header {
   grid-template-rows: 10vh;
   width: 95%;
   height: 7.2vh;
+  animation: roll-down 3s;
 }
 
 @media (min-width: 991.98px) {
@@ -120,6 +145,7 @@ header nav ul li.dropdown ul li a:hover {
   row-gap: 0%;
   height: 800vw;
   overflow: hidden;
+  animation: fade-in 2.5s;
 }
 
 @media (min-width: 991.98px) {
@@ -170,7 +196,6 @@ header nav ul li.dropdown ul li a:hover {
   left: 10%;
 }
 
-
 #gallery .gallery-image .text h1 {
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
@@ -201,8 +226,6 @@ header nav ul li.dropdown ul li a:hover {
   text-align: center;
   transition: background-color 0.2s, color 0.2s;
 }
-
-
 
 @media (min-width: 480px) {
   #gallery .gallery-image .text a {
