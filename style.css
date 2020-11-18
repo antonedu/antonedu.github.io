@@ -11,15 +11,17 @@ header {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 100%;
   grid-template-rows: 10vh;
   width: 95%;
   height: 7.2vh;
 }
+
 @media (min-width: 991.98px) {
   header {
     width: 97.6%;
     height: 10vh;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -35,6 +37,7 @@ header nav {
   margin: auto;
   display: none;
 }
+
 @media (min-width: 991.98px) {
   header nav {
     display: block;
@@ -118,6 +121,7 @@ header nav ul li.dropdown ul li a:hover {
   height: 800vw;
   overflow: hidden;
 }
+
 @media (min-width: 991.98px) {
   #gallery {
     grid-template-columns: 1fr 1fr 1fr;
@@ -135,6 +139,7 @@ header nav ul li.dropdown ul li a:hover {
   overflow: hidden;
   text-align: center;
 }
+
 @media (min-width: 991.98px) {
   #gallery .gallery-image {
     padding-top: 0;
@@ -159,10 +164,10 @@ header nav ul li.dropdown ul li a:hover {
 #gallery .gallery-image .text {
   position: absolute;
   z-index: 1;
-  width: 50%;
+  width: 80%;
   height: 30%;
   top: 40%;
-  left: 25%;
+  left: 10%;
 }
 
 #gallery .gallery-image .text h1 {
@@ -173,6 +178,7 @@ header nav ul li.dropdown ul li a:hover {
   text-shadow: 0px 0px 1px #000;
   text-align: center;
 }
+
 @media (min-width: 991.98px) {
   #gallery .gallery-image .text h1 {
     font-size: 3em;
@@ -184,21 +190,30 @@ header nav ul li.dropdown ul li a:hover {
   color: #fff;
   display: inline-block;
   font-size: 0.8em;
-  width: 30%;
   height: 3.6vh;
   border: 2px #fff solid;
-  margin-right: 35%;
-  margin-left: 35%;
+  width: 34.375%;
+  margin-right: 32.8125%;
+  margin-left: 32.8125%;
   line-height: 3.6vh;
   text-decoration: none;
   text-align: center;
   transition: background-color 0.2s, color 0.2s;
 }
+
 @media (min-width: 991.98px) {
   #gallery .gallery-image .text a {
-    width: 48%;
-    margin-right: 26%;
-    margin-left: 26%;
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 413px) {
+  #gallery .gallery-image .text a {
+    width: 16.75%;
+    margin-right: 40.625%;
+    margin-left: 40.625%;
   }
 }
 
